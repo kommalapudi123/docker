@@ -1,0 +1,16 @@
+mages-->It will displays all images currently you have
+docker ps -a -->It will dispalys all previously ranned images
+docker ps -->It will displays currently running images
+docker inspect ubuntu:xaniel--> It will displays all info about the image 
+docker inspect dazzling_ride | grep IP--> It will displays info about ip address
+docker stop dazzling_ride --> To stop the container
+docker run -it training/sinatra /bin/bash -->running docker image
+
+docker network commands :
+docker network ls
+docker network ls --no-trunc  :shows network configured in our hosts
+docker network inspect bridge
+docker network inspect host
+docker network inspect none
+
+
