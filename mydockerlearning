@@ -13,4 +13,5 @@ docker network inspect bridge
 docker network inspect host
 docker network inspect none
 
+docker network create and remove:
 
