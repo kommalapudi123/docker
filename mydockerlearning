@@ -14,4 +14,7 @@ docker network inspect host
 docker network inspect none
 
 docker network create and remove:
+man docker-network-create  man page for docker 
+--->to create a new network --> docker network create --subnet 10.1.0.0/24 --gateway 10.1.0.1 mybridge01
 
+--->to remove a docker network --> docker network rm name or id
