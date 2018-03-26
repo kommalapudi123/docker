@@ -24,3 +24,10 @@ this command is useful in getting the info about the realtime events happenig fr
 docker events --since '1h'  --> to know the docker events happaening in the last hour in that host
 to filter multiple events :docker events --filter event=attach --filter event=die --filter event=stop
 
+SAVE AND LOAD DOKCER IMAGES::
+Take a base image and tar itup to a file and compress it and then whenever we need we can read that back in and then restore into docker system
+docker commit baseimagename newimagename:this command will create new image with what we made changes to it 
+
+docker save --output centos.latest.tar centos:latest
+gzip centos.latest.tar
+docker load --input centos.latest.tar.gz
