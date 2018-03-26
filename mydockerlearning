@@ -18,3 +18,9 @@ man docker-network-create  man page for docker
 --->to create a new network --> docker network create --subnet 10.1.0.0/24 --gateway 10.1.0.1 mybridge01
 
 --->to remove a docker network --> docker network rm name or id
+
+docker events:(to monitor internals of our containers)
+this command is useful in getting the info about the realtime events happenig from the server.
+docker events --since '1h'  --> to know the docker events happaening in the last hour in that host
+to filter multiple events :docker events --filter event=attach --filter event=die --filter event=stop
+
