@@ -1,0 +1,16 @@
+cd /etc/yum.repos.d
+sudo vim docker.repo
+  [dockerrepo]
+  name=Docker Repository
+  baseurl=https://yum.dockerproject.org/repo/main/centos/$releasever/
+  enabled=1
+  gpgcheck=1
+  gpgkey=https://yum.dockerproject.org/gpg
+yum update
+yum install docker-engine
+systemctl enable docker
+systemctl start docker
+systemctl status docker
+cd /var/run
+usermod test -G docker
+docker images
